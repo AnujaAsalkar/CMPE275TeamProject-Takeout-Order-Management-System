@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Team Project</display-name>
+  <welcome-file-list>
+    <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+        <servlet-name>controller</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>user_controller</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    
+    <servlet-mapping>
+        <servlet-name>controller</servlet-name>
+       <url-pattern>/getprofilehtml.html</url-pattern>
+      <url-pattern>/addMenu.html</url-pattern> 
+       <url-pattern>/orderHistory.html</url-pattern>
+       <url-pattern>/activate.html</url-pattern>
+        <url-pattern>/deactivate.html</url-pattern>
+        <url-pattern>/editMenu.html</url-pattern>
+         <url-pattern>/update.html</url-pattern>
+        <url-pattern>/resetMenu.html</url-pattern>
+        <url-pattern>/setMenu.html</url-pattern>
+         <url-pattern>/renderAdmin.html</url-pattern>
+         <url-pattern>/popularityReport.html</url-pattern>
+    </servlet-mapping>
+  
+    
+    <servlet-mapping>
+        <servlet-name>user_controller</servlet-name>
+         <url-pattern>/renderSignup.html</url-pattern>
+          <url-pattern>/renderLogin.html</url-pattern>
+	      <url-pattern>/signup.html</url-pattern>
+	      <url-pattern>/userlogin.html</url-pattern>
+	      <url-pattern>/receive_order.html</url-pattern>
+	       <url-pattern>/logout.html</url-pattern>
+	       <url-pattern>/signup2.html</url-pattern>
+	       <url-pattern>/confirmOrder.html</url-pattern>
+	        <url-pattern>/showOrder.html</url-pattern>
+	        <url-pattern>/cancelOrder.html</url-pattern>
+	              <url-pattern>/userTime.html</url-pattern>
+	              <url-pattern>/viewOrders.html</url-pattern>
+	        <url-pattern>/cancelUserOrder.html</url-pattern>
+    </servlet-mapping>
+     
+  
+</web-app>
